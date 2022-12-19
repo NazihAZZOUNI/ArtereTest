@@ -26,11 +26,11 @@ public class CacheConfigService implements CommandLineRunner {
     }
 
     public Integer getTime() {
-        return this.getConfig("timer").isPresent() ? this.getConfig("time").get().getValue() : 50000;
+        return this.getConfig("timer").isPresent() ? this.getConfig("timer").get().getValue() : 50000;
     }
 
     public Integer getMaxItems() {
-        return this.getConfig("maxItems").isPresent() ? this.getConfig("maxitems").get().getValue() : 10;
+        return this.getConfig("maxItems").isPresent() ? this.getConfig("maxItems").get().getValue() : 10;
     }
 
     @Override
